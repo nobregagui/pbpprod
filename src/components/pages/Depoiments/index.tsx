@@ -17,38 +17,38 @@ const Depoiments: React.FC<any> = () => {
     {
       name: "Guilherme Nobrega",
       depoiment:
-        "Empresa muito boa, sempre atende todas as expectativas, com um ambiente harmônico",
+        "A PB Produções transformou nosso evento em algo inesquecível. A atenção aos detalhes e a qualidade dos tecidos utilizados superaram todas as nossas expectativas. A Lycra tensionada trouxe um charme único ao ambiente. O resultado foi simplesmente espetacular, e recebemos inúmeros elogios dos nossos convidados. Recomendo de olhos fechados!",
       photo: "../../../guiNobrega.jpg",
     },
     {
-      name: "Pedro Bruno",
+      name: "Davi Alves",
       depoiment:
-        "Empresa muito boa, sempre atende todas as expectativas, com um ambiente harmônico",
-      photo: "../../../guiNobrega.jpg",
+        "Contratar a PB Produções foi a melhor decisão que tomamos para a nossa formatura. A equipe foi extremamente profissional e atenciosa desde o início. O cenário criado por eles foi além do que imaginávamos, deixando o evento sofisticado e ao mesmo tempo acolhedor. Ficamos muito satisfeitos com o resultado!",
+      photo: "../../../davi.jpeg",
     },
     {
-      name: "Guilherme",
+      name: "Diogo Henrique",
       depoiment:
-        "Empresa muito boa, sempre atende todas as expectativas, com um ambiente harmônico",
-      photo: "../../../guiNobrega.jpg",
+        "Já trabalhamos com várias empresas de cenografia, mas a PB Produções se destacou pelo comprometimento e pela qualidade dos materiais. A equipe é experiente e sabe exatamente como dar vida às ideias do cliente. A segurança com a ignificação dos tecidos nos trouxe muita tranquilidade. Vamos, com certeza, trabalhar juntos novamente.",
+      photo: "../../../diogo.jpeg",
     },
     {
-      name: "Guilherme",
+      name: "Pedro Genovese",
       depoiment:
-        "Empresa muito boa, sempre atende todas as expectativas, com um ambiente harmônico",
-      photo: "../../../guiNobrega.jpg",
+        "O evento corporativo que organizamos foi um sucesso graças à PB Produções. A abrangência nacional deles nos permitiu realizar o evento em diferentes cidades com o mesmo padrão de qualidade. O resultado foi impecável, e a entrega foi dentro do prazo, algo essencial para nós. A equipe fez um trabalho incrível!",
+      photo: "../../../pedro.jpeg",
     },
     {
-      name: "Guilherme",
+      name: "Gustavo Tiscal",
       depoiment:
-        "Empresa muito boa, sempre atende todas as expectativas, com um ambiente harmônico",
-      photo: "../../../guiNobrega.jpg",
+        "Ficamos impressionados com a criatividade e a habilidade da PB Produções em transformar o espaço do nosso evento. A utilização da Lycra nos cenários trouxe um toque moderno e elegante que deixou a todos maravilhados. Além disso, o atendimento personalizado nos fez sentir confiantes em cada etapa do processo.",
+      photo: "../../../tiscal.jpeg",
     },
     {
-      name: "Guilherme",
+      name: "Gabriel Cequeira",
       depoiment:
-        "Empresa muito boa, sempre atende todas as expectativas, com um ambiente harmônico",
-      photo: "../../../guiNobrega.jpg",
+        "A PB Produções se superou em nosso evento. Desde o primeiro contato, percebemos o profissionalismo da equipe. O histórico de sucesso deles realmente se reflete no trabalho que entregam. A equipe é altamente qualificada e eficiente, e o nosso evento foi um verdadeiro sucesso. Não poderíamos estar mais felizes com o resultado!",
+      photo: "../../../gabriel.jpeg",
     },
   ];
 
@@ -117,11 +117,13 @@ const Depoiments: React.FC<any> = () => {
               inesquecível. Aqui, você encontrará avaliações e testemunhos que
               destacam nossa
               <span className="text-orange-500 font-bold">
-                {" "}experiência comprovada
+                {" "}
+                experiência comprovada
               </span>
               ,
               <span className="text-orange-500 font-bold">
-              {" "} atendimento personalizado
+                {" "}
+                atendimento personalizado
               </span>
               , e{" "}
               <span className="text-orange-500 font-bold">
@@ -146,7 +148,7 @@ const Depoiments: React.FC<any> = () => {
                   alt=""
                 />
                 <p className="text-white">{item.depoiment}</p>
-                <div className="flex gap-3 items-center">
+                <div className="flex gap-3 mt-4 items-center">
                   <div className="w-14 h-14 rounded-full">
                     <img
                       src={item.photo}
