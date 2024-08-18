@@ -29,14 +29,14 @@ const NavBarDesktop: React.FC = () => {
         >
           <FontAwesomeIcon icon={faInstagram} size="2x" />
         </a>
-        <a
+        {/* <a
           href="https://www.twitter.com"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[#9C9C9C] hover:text-white"
         >
           <FontAwesomeIcon icon={faTwitter} size="2x" />
-        </a>
+        </a> */}
       </div>
     </div>
   );

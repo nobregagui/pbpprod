@@ -15,25 +15,25 @@ const Footer: React.FC = () => {
             <div>
               <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-gray-400">
                 <li>
-                  <a href="#home" className="hover:text-white">
+                  <a href="/" className="hover:text-white">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="#about" className="hover:text-white">
+                  <a href="/galeria" className="hover:text-white">
                     Galeria
                   </a>
                 </li>
                 <li>
-                  <a href="#services" className="hover:text-white">
+                  <a href="/depoimentos" className="hover:text-white">
                     Depoimentos
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#contact" className="hover:text-white">
                     Contato
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="flex space-x-4 mb-4 md:mb-0">

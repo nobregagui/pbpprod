@@ -46,9 +46,9 @@ const themes = {
 };
 
 const dataMenu = [
-  { name: "Home", link: '/' },
-  { name: "Galeria", link: '/galeria' },
-  { name: "Depoimentos", link: '/depoimentos' }
+  { name: "Home", link: "/" },
+  { name: "Galeria", link: "/galeria" },
+  { name: "Depoimentos", link: "/depoimentos" },
 ];
 
 // hex to rgba converter
@@ -99,7 +99,9 @@ const CustomSideBar: React.FC = () => {
         <div className="containerSideBar">
           <div className="flex h-screen">
             <Sidebar
-              className={`sub-overlay ${isActiveMobile ? "active" : "inactive"}`}
+              className={`sub-overlay ${
+                isActiveMobile ? "active" : "inactive"
+              }`}
               collapsed={isActive}
               toggled={isActiveMobile}
               onBackdropClick={() => {
@@ -122,10 +124,11 @@ const CustomSideBar: React.FC = () => {
                 </div>
                 <div className="menuSideBar">
                   {dataMenu.map((item, index) => (
-                    <div
+                    <a
+                      href={item.link}
                       className={`menuItem ${
                         active === item.name ? "active" : ""
-                      }`}
+                      } text-white`}
                       key={item.name}
                       onClick={() => {
                         setActive(item.name);
@@ -142,8 +145,8 @@ const CustomSideBar: React.FC = () => {
                         }
                       }}
                     >
-                      <a href={item.link}>{item.name}</a>
-                    </div>
+                      {item.name}
+                    </a>
                   ))}
                 </div>
                 <div className="flex flex-col absolute bottom-10 gap-6 px-3">

@@ -93,7 +93,7 @@ const BannerHome: React.FC<any> = (props) => {
           </div>
         )}
 
-        <div className="absolute bottom-4 md:bottom-16 left-1/2 transform -translate-x-1/2 space-y-4">
+        <div className="absolute hidden bottom-4 md:bottom-16 left-1/2 transform md:flex -translate-x-1/2 space-y-4">
           <FontAwesomeIcon
             icon={faChevronDown}
             className={`${
