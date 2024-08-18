@@ -1,0 +1,157 @@
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.containerSideBar {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.title-sidebar {
+  color: var(--Colors-Neutral-Neutral-0, #FFF);
+  /* H6 19 */
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 155%;
+  padding: 32px 20px 20px;
+  border-bottom: 1px solid var(--Colors-Neutral-Neutral-800, #404B5A);
+  /* 29.45px */
+}
+
+.menuSideBar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--L, 24px);
+  flex: 1 0 0;
+  align-self: stretch;
+  margin-top: 50px;
+}
+
+.menuItem {
+  display: flex;
+  height: 64px;
+  padding: var(--Numbers-8px, 8px) var(--L, 24px);
+  align-items: center;
+  gap: var(--Numbers-16px, 16px);
+  align-self: stretch;
+  cursor: pointer;
+}
+
+.menuItem.active {
+  background: var(--Colors-Brand-Blurple-600, #b46f13);
+}
+
+.menuItem.active a {
+  color: #FFF;
+
+}
+
+.menuItem a {
+  color: var(--Colors-Neutral-Neutral-600, #929FB1);
+  cursor: pointer;
+
+  /* Body 16 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 155%;
+  /* 24.8px */
+  letter-spacing: 0.16px;
+}
+
+@media (max-width: 600px) {
+  .containerSideBar {
+    z-index: 100;
+    position: relative;
+  }
+}
+
+
+
+.sub-overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  transition: all 200ms ease-in-out;
+
+
+  min-height: 100vh;
+  max-height: 100vh;
+  min-width: 300px;
+  width: 300px;
+  overflow: auto;
+  border: none;
+  /* background: rgba(0, 0, 0, 0.5); */
+  background-color: #090C10 !important;
+}
+
+.sidebar-styled {
+  /* Customize your sidebar styling here if needed */
+}
+
+@media only screen and (max-width: 576px) {
+  .sidebar-styled {
+    min-height: 100%;
+    max-height: 100%;
+  }
+}
+
+.sub-sidebar {
+  position: fixed;
+  top: 0%;
+  background-color: #111827;
+  left: 118px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  z-index: 100;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sub-sidebar.active {
+  opacity: 1;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.sub-sidebar.inactive {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .sub-sidebar {
+    width: 100%;
+    padding: 0px;
+    min-height: 100%;
+    max-height: 100%;
+  }
+}
+
+.wapper {
+  /* Customize your wrapper styling here if needed */
+}
+
+@media only screen and (max-width: 576px) {
+  .wapper {
+    /* z-index: 3;
+    left: 124px;
+    min-width: 200px;
+    width: 230px;
+    padding-top: 24px;
+    padding-left: 15px;
+    padding-right: 15px; */
+  }
+}

@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom"; // Importe os componentes de roteamento
+import "./App.css";
+import CustomTheme from "./CustomTheme";
+// import Teste from "./components/pages";
+import { Theme } from "@radix-ui/themes";
+import '@radix-ui/themes/styles.css';
+import Home from "./components/pages/About";
+import Galery from "./components/pages/Galery";
+import Depoiments from "./components/pages/Depoiments";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Theme>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/galeria" element={<Galery />} />
+          <Route path="/depoimentos" element={<Depoiments />} />
+        </Routes>
+      </Theme>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
