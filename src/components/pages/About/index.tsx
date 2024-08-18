@@ -198,6 +198,113 @@ const Home: React.FC<any> = () => {
             seu evento de forma única e especial.
           </p>
         </div>
+        <div
+          className="h-[80px] items-center w-full text-center"
+          style={{
+            background: "linear-gradient(to bottom, #141414 5%, #442500 100%)",
+          }}
+        ></div>
+        <div
+          style={{
+            background: "linear-gradient(to top, #141414 90%, #442500 100%)",
+          }}
+          className="flex flex-col gap-10 justify-center items-center px-6 py-16 md:px-28 md:py-36"
+        >
+          <div className="">
+          <h2 className="font-bold text-white text-[27px] mt-10 mb-36 md:text-[52px]">
+            <span className="text-orange-500">NOSSOS </span>SERVIÇOS
+          </h2>
+
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-xl text-orange-400
+                 font-semibold">
+                  Cenografia com Tecidos
+                </h3>
+                <p className="mt-2 text-white">
+                  Nossa equipe especializada transforma ambientes comuns em
+                  cenários deslumbrantes utilizando tecidos de alta qualidade.
+                  Com uma ampla variedade de opções, criamos desde tendas e
+                  coberturas até estruturas complexas que dão vida a eventos
+                  únicos. A estética impecável dos nossos trabalhos é sempre
+                  acompanhada pela segurança e durabilidade dos materiais.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl text-orange-400
+                 font-semibold">Carpetes e Forrações</h3>
+                <p className="mt-2 text-white">
+                  Oferecemos soluções de carpetes e forrações que aliam
+                  elegância e praticidade para o seu evento. Nossos produtos são
+                  selecionados para complementar a identidade visual do seu
+                  espaço, criando uma base acolhedora e confortável para os
+                  convidados. Além disso, garantimos a instalação e remoção
+                  eficientes, respeitando os prazos acordados.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl text-orange-400
+                 font-semibold">
+                  Cenografia com Sublimações
+                </h3>
+                <p className="mt-2 text-white">
+                  A cenografia com sublimações permite personalizar espaços de
+                  maneira criativa e impactante. Utilizando impressões de alta
+                  definição, criamos painéis, banners e revestimentos que dão um
+                  toque exclusivo ao seu evento. Seja para destacar uma marca ou
+                  para criar um ambiente temático, nossas sublimações elevam o
+                  nível da experiência visual.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl text-orange-400
+                 font-semibold">
+                  Construção de Estandes e Ambientes Cenográficos
+                </h3>
+                <p className="mt-2 text-white">
+                  Especializados na construção de estandes e ambientes
+                  cenográficos, oferecemos soluções que destacam a presença da
+                  sua marca em feiras e eventos. Nosso foco é criar espaços
+                  funcionais e atrativos, que capturam a atenção do público e
+                  promovem a interação com os produtos ou serviços apresentados.
+                  Garantimos uma execução precisa, do projeto à montagem final.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl text-orange-400
+                 font-semibold">
+                  Criação de Ambientes Instagramáveis
+                </h3>
+                <p className="mt-2 text-white">
+                  Em um mundo digital, criar ambientes instagramáveis é
+                  essencial para gerar engajamento e visibilidade. Desenvolvemos
+                  espaços criativos e interativos que incentivam os
+                  participantes a compartilharem suas experiências nas redes
+                  sociais, aumentando a exposição da sua marca. Cada detalhe é
+                  pensado para proporcionar fotos incríveis e memórias
+                  inesquecíveis.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl text-orange-400
+                 font-semibold">Ativações de Marcas</h3>
+                <p className="mt-2 text-white">
+                  As ativações de marcas são fundamentais para criar conexões
+                  emocionais com o público. Trabalhamos para desenvolver
+                  experiências imersivas que destacam os valores e diferenciais
+                  da sua marca. Com uma abordagem criativa e estratégica,
+                  criamos momentos memoráveis que ficam na mente dos
+                  consumidores, fortalecendo a presença da marca no mercado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <Footer />
 
         <a
