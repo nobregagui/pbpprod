@@ -106,7 +106,7 @@ const Depoiments: React.FC<any> = () => {
             textButton={"Confira abaixo"}
           />
         </div>
-        <div className="bg-[#000] p-3 md:p-16">
+        <div className="bg-[#000] p-7 md:p-16">
           <div ref={sectionHome} className="px-3 md:px-11 mb-28">
             <h1 className="text-[26px] md:mb-0 md:text-[48px] text-white mt-6 font-bold text-center mb-7">
               Confira alguns de nossos feedbacks!

@@ -211,7 +211,7 @@ const Home: React.FC<any> = () => {
           className="flex flex-col gap-10 justify-center items-center px-6 py-16 md:px-28 md:py-36"
         >
           <div className="">
-          <h2 className="font-bold text-white text-[27px] mt-10 mb-36 md:text-[52px]">
+          <h2 className="font-bold text-white text-[27px] mt-10 text-center mb-36 md:text-[52px]">
             <span className="text-orange-500">NOSSOS </span>SERVIÇOS
           </h2>
 
