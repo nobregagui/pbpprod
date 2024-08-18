@@ -150,7 +150,7 @@ const CustomSideBar: React.FC = () => {
                   ))}
                 </div>
                 <div className="flex flex-col absolute bottom-10 gap-6 px-3">
-                  <div className="text-gray-400 flex items-center gap-2 hover:text-white">
+                  {/* <div className="text-gray-400 flex items-center gap-2 hover:text-white">
                     <a
                       href="https://www.facebook.com"
                       target="_blank"
@@ -160,8 +160,8 @@ const CustomSideBar: React.FC = () => {
                       <FontAwesomeIcon icon={faFacebook} size="2x" />
                     </a>
                     <p className="cursor-pointer">Pb Produções</p>
-                  </div>
-                  <div className="text-gray-400 flex items-center gap-2 hover:text-white">
+                  </div> */}
+                  {/* <div className="text-gray-400 flex items-center gap-2 hover:text-white">
                     <a
                       href="https://www.instagram.com"
                       target="_blank"
@@ -171,7 +171,7 @@ const CustomSideBar: React.FC = () => {
                       <FontAwesomeIcon icon={faInstagram} size="2x" />
                     </a>
                     <p className="cursor-pointer">pbproducoes</p>
-                  </div>
+                  </div> */}
                   <div className="text-gray-400 flex items-center gap-2 hover:text-white">
                     <Icon name="mail" className="w-[35px]" />
                     <p className="cursor-pointer">pbproducoesbr@gmail.com</p>
