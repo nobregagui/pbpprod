@@ -7,7 +7,7 @@ import NavBarDesktop from "../navBarDesktop";
 const BannerHome: React.FC<any> = (props) => {
   return (
     <div
-      className={`min-h-[100vh] w-full ${
+      className={`min-h-[100vh] md:pt-[70px] w-full ${
         props.section ? "bg-[#0a0a0a]" : "bg-[#080808]"
       } `}
     >
@@ -93,7 +93,7 @@ const BannerHome: React.FC<any> = (props) => {
           </div>
         )}
 
-        <div className="absolute hidden bottom-4 md:bottom-16 left-1/2 transform md:flex -translate-x-1/2 space-y-4">
+        <div  onClick={props.onClick} className="absolute hidden bottom-4 md:bottom-16 left-1/2 transform md:flex -translate-x-1/2 space-y-4">
           <FontAwesomeIcon
             icon={faChevronDown}
             className={`${

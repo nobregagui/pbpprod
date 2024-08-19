@@ -13,16 +13,16 @@ const NavBarDesktop: React.FC = () => {
       <a href="/galeria" className="text-[#9C9C9C] w-fit hover:text-white cursor-pointer">Galeria</a>
       <a href="/depoimentos" className="text-[#9C9C9C] w-fit hover:text-white cursor-pointer">Depoimentos</a>
       <div className="flex gap-4">
-        <a
+        {/* <a
           href="https://www.facebook.com"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[#9C9C9C] hover:text-white"
         >
           <FontAwesomeIcon icon={faFacebook} size="2x" />
-        </a>
+        </a> */}
         <a
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/pbproducoesbr?igsh=MXc3ZG83cXB5ZDd1MQ=="
           target="_blank"
           rel="noopener noreferrer"
           className="text-[#9C9C9C] hover:text-white"

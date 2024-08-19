@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import useStore from "../../SideBar/storets";
 import CustomSideBar from "../../SideBar";
 import Icon from "../../Icon";
@@ -6,9 +6,13 @@ import BannerHome from "../../bannerHome";
 import Footer from "../../Footer";
 
 const Home: React.FC<any> = () => {
+  const sectionHome = useRef<HTMLDivElement>(null);
+
   const { isActiveMobile, toggleActiveMobile, isActive, toggleActive } =
     useStore();
-
+  const handleScrollHome = () => {
+    sectionHome.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="flex relative h-screen">
       <div className="flex h-screen">
@@ -57,11 +61,13 @@ const Home: React.FC<any> = () => {
             description={
               "Nós cuidamos de cada detalhe para garantir que sua celebração seja um sucesso absoluto. Confie em nossa equipe para criar memórias que você e seus convidados vão guardar para sempre."
             }
+            onClick={() => handleScrollHome()}
             textButton={"Venha nos conhecer"}
             buttons
             photoHome
           />
           <div
+            ref={sectionHome}
             style={{
               background: "linear-gradient(to top, #141414 80%, #442500 100%)",
             }}
@@ -211,14 +217,16 @@ const Home: React.FC<any> = () => {
           className="flex flex-col gap-10 justify-center items-center px-6 py-16 md:px-28 md:py-36"
         >
           <div className="">
-          <h2 className="font-bold text-white text-[27px] mt-10 text-center mb-36 md:text-[52px]">
-            <span className="text-orange-500">NOSSOS </span>SERVIÇOS
-          </h2>
+            <h2 className="font-bold text-white text-[27px] mt-10 text-center mb-36 md:text-[52px]">
+              <span className="text-orange-500">NOSSOS </span>SERVIÇOS
+            </h2>
 
             <div className="space-y-8">
               <div>
-                <h3 className="text-xl text-orange-400
-                 font-semibold">
+                <h3
+                  className="text-xl text-orange-400
+                 font-semibold"
+                >
                   Cenografia com Tecidos
                 </h3>
                 <p className="mt-2 text-white">
@@ -232,8 +240,12 @@ const Home: React.FC<any> = () => {
               </div>
 
               <div>
-                <h3 className="text-xl text-orange-400
-                 font-semibold">Carpetes e Forrações</h3>
+                <h3
+                  className="text-xl text-orange-400
+                 font-semibold"
+                >
+                  Carpetes e Forrações
+                </h3>
                 <p className="mt-2 text-white">
                   Oferecemos soluções de carpetes e forrações que aliam
                   elegância e praticidade para o seu evento. Nossos produtos são
@@ -245,8 +257,10 @@ const Home: React.FC<any> = () => {
               </div>
 
               <div>
-                <h3 className="text-xl text-orange-400
-                 font-semibold">
+                <h3
+                  className="text-xl text-orange-400
+                 font-semibold"
+                >
                   Cenografia com Sublimações
                 </h3>
                 <p className="mt-2 text-white">
@@ -260,8 +274,10 @@ const Home: React.FC<any> = () => {
               </div>
 
               <div>
-                <h3 className="text-xl text-orange-400
-                 font-semibold">
+                <h3
+                  className="text-xl text-orange-400
+                 font-semibold"
+                >
                   Construção de Estandes e Ambientes Cenográficos
                 </h3>
                 <p className="mt-2 text-white">
@@ -275,8 +291,10 @@ const Home: React.FC<any> = () => {
               </div>
 
               <div>
-                <h3 className="text-xl text-orange-400
-                 font-semibold">
+                <h3
+                  className="text-xl text-orange-400
+                 font-semibold"
+                >
                   Criação de Ambientes Instagramáveis
                 </h3>
                 <p className="mt-2 text-white">
@@ -291,8 +309,12 @@ const Home: React.FC<any> = () => {
               </div>
 
               <div>
-                <h3 className="text-xl text-orange-400
-                 font-semibold">Ativações de Marcas</h3>
+                <h3
+                  className="text-xl text-orange-400
+                 font-semibold"
+                >
+                  Ativações de Marcas
+                </h3>
                 <p className="mt-2 text-white">
                   As ativações de marcas são fundamentais para criar conexões
                   emocionais com o público. Trabalhamos para desenvolver
@@ -308,7 +330,7 @@ const Home: React.FC<any> = () => {
         <Footer />
 
         <a
-          href="https://wa.me/SEUNUMERO" // substitua "SEUNUMERO" pelo número de telefone desejado no formato internacional
+          href="https://wa.me/11969198309" // substitua "SEUNUMERO" pelo número de telefone desejado no formato internacional
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-4 right-4 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition duration-300"

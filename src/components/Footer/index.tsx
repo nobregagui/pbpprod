@@ -5,6 +5,7 @@ import {
   faInstagram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import Icon from "../Icon";
 
 const Footer: React.FC = () => {
   return (
@@ -37,32 +38,33 @@ const Footer: React.FC = () => {
               </ul>
             </div>
             <div className="flex space-x-4 mb-4 md:mb-0">
-              <a
+              {/* <a
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white"
               >
                 <FontAwesomeIcon icon={faFacebook} size="2x" />
-              </a>
+              </a> */}
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/pbproducoesbr?igsh=MXc3ZG83cXB5ZDd1MQ=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white"
               >
                 <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
-              <a
+              {/* <a
                 href="https://www.twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white"
               >
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
-              </a>
+              </a> */}
             </div>
           </div>
+      
           <div className="mb-4 md:mb-0">
             <h3 className="text-2xl font-bold">PB Produções</h3>
             <p className="text-gray-400">

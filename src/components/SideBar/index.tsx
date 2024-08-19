@@ -174,7 +174,7 @@ const CustomSideBar: React.FC = () => {
                   </div> */}
                   <div className="text-gray-400 flex items-center gap-2 hover:text-white">
                     <Icon name="mail" className="w-[35px]" />
-                    <p className="cursor-pointer">pbproducoesbr@gmail.com</p>
+                    <p className="cursor-pointer">comercial@pbproducoes.com</p>
                   </div>
                   <p className="text-gray-400 text-center mt-7">
                     © 2024 PB Produções. Todos os direitos reservados.

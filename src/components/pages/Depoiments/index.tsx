@@ -52,30 +52,10 @@ const Depoiments: React.FC<any> = () => {
     },
   ];
 
-  // Refs for each section
-  const arcaRef = useRef<HTMLDivElement>(null);
   const sectionHome = useRef<HTMLDivElement>(null);
-  const esborniaRef = useRef<HTMLDivElement>(null);
-  const biggerlandRef = useRef<HTMLDivElement>(null);
 
   const handleScrollHome = () => {
     sectionHome.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const handleScrollToSection = (section: string) => {
-    switch (section) {
-      case "Arca de noé":
-        arcaRef.current?.scrollIntoView({ behavior: "smooth" });
-        break;
-      case "Esbórnia e Awe Caraiva":
-        esborniaRef.current?.scrollIntoView({ behavior: "smooth" });
-        break;
-      case "Biggerland Festival":
-        biggerlandRef.current?.scrollIntoView({ behavior: "smooth" });
-        break;
-      default:
-        break;
-    }
   };
 
   return (
@@ -84,7 +64,6 @@ const Depoiments: React.FC<any> = () => {
         <CustomSideBar />
         <Icon
           onClick={() => {
-            console.log("Teste clicou aqui");
             toggleActiveMobile(!isActiveMobile);
             toggleActive(!isActive);
           }}
@@ -106,8 +85,8 @@ const Depoiments: React.FC<any> = () => {
             textButton={"Confira abaixo"}
           />
         </div>
-        <div className="bg-[#000] p-7 md:p-16">
-          <div ref={sectionHome} className="px-3 md:px-11 mb-28">
+        <div ref={sectionHome}  className="bg-[#000] p-7 md:p-16">
+          <div className="px-3 md:px-11 mb-28">
             <h1 className="text-[26px] md:mb-0 md:text-[48px] text-white mt-6 font-bold text-center mb-7">
               Confira alguns de nossos feedbacks!
             </h1>
@@ -165,7 +144,7 @@ const Depoiments: React.FC<any> = () => {
         <Footer />
 
         <a
-          href="https://wa.me/SEUNUMERO" // substitua "SEUNUMERO" pelo número de telefone desejado no formato internacional
+          href="https://wa.me/11969198309" // substitua "SEUNUMERO" pelo número de telefone desejado no formato internacional
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-4 right-4 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition duration-300"

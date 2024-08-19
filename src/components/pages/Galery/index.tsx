@@ -551,7 +551,7 @@ const Galery: React.FC<any> = () => {
         <Footer />
 
         <a
-          href="https://wa.me/SEUNUMERO" // substitua "SEUNUMERO" pelo número de telefone desejado no formato internacional
+          href="https://wa.me/11969198309" // substitua "SEUNUMERO" pelo número de telefone desejado no formato internacional
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-4 right-4 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition duration-300"
