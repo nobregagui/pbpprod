@@ -57,7 +57,7 @@ const Home: React.FC<any> = () => {
             </div>
           </div> */}
           <BannerHome
-            title={"PB Producoes"}
+            title={"PB Produções"}
             description={
               "Nós cuidamos de cada detalhe para garantir que sua celebração seja um sucesso absoluto. Confie em nossa equipe para criar memórias que você e seus convidados vão guardar para sempre."
             }
