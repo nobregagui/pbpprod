@@ -61,8 +61,10 @@ const Home: React.FC<any> = () => {
             description={
               "Nós cuidamos de cada detalhe para garantir que sua celebração seja um sucesso absoluto. Confie em nossa equipe para criar memórias que você e seus convidados vão guardar para sempre."
             }
-            onClick={() => handleScrollHome()}
-            textButton={"Venha nos conhecer"}
+            onClick={() => window.open(`https://wa.me/11969198309`, "_blank")}
+            onClickArrow={() => handleScrollHome()}
+            textButton={"Solicite uma reunião"}
+            buttonWhatsapp
             buttons
             photoHome
           />
@@ -189,6 +191,14 @@ const Home: React.FC<any> = () => {
           }}
           className="flex flex-col gap-10 justify-center items-center px-6 py-16 md:px-28 md:py-36"
         >
+           <button
+                onClick={() => {
+                  window.open(`https://wa.me/11969198309`, "_blank")
+                }}
+                className={`bg-green-500  text-[18px] w-full md:w-fit font-bold text-white py-2 px-4 rounded shadow-md hover:shadow-lg focus:outline-none`}
+              >
+                Solicite seu orçamento
+              </button>
           <h2 className="font-bold text-white text-[27px] md:text-[52px]">
             <span className="text-orange-500">NOSSA </span>EQUIPE
           </h2>

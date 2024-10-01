@@ -34,7 +34,7 @@ const BannerHome: React.FC<any> = (props) => {
               </p>
               <button
                 onClick={props.onClick}
-                className="bg-orange-500 text-[18px] w-full md:w-fit font-bold text-white py-2 px-4 rounded shadow-md hover:shadow-lg focus:outline-none"
+                className={`${props.buttonWhatsapp ? 'bg-green-500' : 'bg-orange-500'}  text-[18px] w-full md:w-fit font-bold text-white py-2 px-4 rounded shadow-md hover:shadow-lg focus:outline-none`}
               >
                 {props.textButton}
               </button>
@@ -93,7 +93,7 @@ const BannerHome: React.FC<any> = (props) => {
           </div>
         )}
 
-        <div  onClick={props.onClick} className="absolute hidden bottom-4 md:bottom-16 left-1/2 transform md:flex -translate-x-1/2 space-y-4">
+        <div  onClick={props.onClickArrow} className="absolute hidden bottom-4 md:bottom-16 left-1/2 transform md:flex -translate-x-1/2 space-y-4">
           <FontAwesomeIcon
             icon={faChevronDown}
             className={`${
