@@ -30,32 +30,6 @@ const Home: React.FC<any> = () => {
       </div>
       <div className="w-full">
         <div className="flex flex-col items-center">
-          {/* <div
-            className="h-screen items-center w-full text-center content-center"
-            style={{
-              background:
-                "linear-gradient(to bottom, #141414 80%, #442500 100%)",
-            }}
-          >
-            <div className="flex justify-center">
-              <div className="max-w-[900px]">
-                <p className="text-white text-[70px]" data-aos="zoom-in">
-                  Faremos de seu evento <br /> um acontecimento incrível!
-                </p>
-                <img
-                  src="../../../logo2.png"
-                  alt="Background"
-                  className="w-44 float-end"
-                />
-              </div>
-            </div>
-            <div className="absolute bottom-64 left-1/2 transform -translate-x-1/2 space-y-4">
-              <FontAwesomeIcon
-                icon={faChevronDown}
-                className="text-white font-normal text-[60px] cursor-pointer animate-blink"
-              />
-            </div>
-          </div> */}
           <BannerHome
             title={"PB Produções"}
             description={
