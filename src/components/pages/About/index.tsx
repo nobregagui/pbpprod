@@ -61,7 +61,7 @@ const Home: React.FC<any> = () => {
             description={
               "Nós cuidamos de cada detalhe para garantir que sua celebração seja um sucesso absoluto. Confie em nossa equipe para criar memórias que você e seus convidados vão guardar para sempre."
             }
-            onClick={() => window.open(`https://wa.me/11969198309`, "_blank")}
+            onClick={() => window.open(`https://api.whatsapp.com/send/?phone=5511969198309&text=Olá+estava+no+site+e+gostaria+de+saber+mais+sobre+os+serviços`, "_blank")}
             onClickArrow={() => handleScrollHome()}
             textButton={"Solicite uma reunião"}
             buttonWhatsapp
@@ -193,7 +193,7 @@ const Home: React.FC<any> = () => {
         >
            <button
                 onClick={() => {
-                  window.open(`https://wa.me/11969198309`, "_blank")
+                  window.open(`https://api.whatsapp.com/send/?phone=5511969198309&text=Olá+estava+no+site+e+gostaria+de+saber+mais+sobre+os+serviços`, "_blank")
                 }}
                 className={`bg-green-500  text-[18px] w-full md:w-fit font-bold text-white py-2 px-4 rounded shadow-md hover:shadow-lg focus:outline-none`}
               >
@@ -340,7 +340,7 @@ const Home: React.FC<any> = () => {
         <Footer />
 
         <a
-          href="https://wa.me/11969198309" // substitua "SEUNUMERO" pelo número de telefone desejado no formato internacional
+          href="https://api.whatsapp.com/send/?phone=5511969198309&text=Olá+estava+no+site+e+gostaria+de+saber+mais+sobre+os+serviços" // substitua "SEUNUMERO" pelo número de telefone desejado no formato internacional
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-4 right-4 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition duration-300"

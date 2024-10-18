@@ -144,7 +144,7 @@ const Depoiments: React.FC<any> = () => {
         <Footer />
 
         <a
-          href="https://wa.me/11969198309" // substitua "SEUNUMERO" pelo número de telefone desejado no formato internacional
+          href="https://api.whatsapp.com/send/?phone=5511969198309&text=Olá+estava+no+site+e+gostaria+de+saber+mais+sobre+os+serviços" // substitua "SEUNUMERO" pelo número de telefone desejado no formato internacional
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-4 right-4 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition duration-300"
