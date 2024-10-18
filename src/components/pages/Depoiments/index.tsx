@@ -5,8 +5,6 @@ import Icon from "../../Icon";
 import BannerHome from "../../bannerHome";
 import Footer from "../../Footer";
 import "./styles.css";
-import PhotoGallery from "../../galeryComponent";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const Depoiments: React.FC<any> = () => {
